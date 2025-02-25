@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết Quả Học Tập</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+      table {
+        width: 600px;
+        border-collapse: collapse;
+        border: 1px solid #333;
+      }
+      td {
+        border: 1px solid #333;
+        padding: 8px;
+      }
+      .header {
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #ffffff;
+      }
+      tr:nth-child(odd):not(:first-child) {
+        
+        background-color: #f2f2f2;
+      }
+      .center {
+        text-align: center;
+      }
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .footer {
+        color: black;
+        font-weight: bold;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DANH SÁCH KẾT QUẢ HỌC TẬP</h1>
+      <table>
+        <tr>
+          <td class="header">Họ và tên</td>
+          <td class="header">Năm sinh</td>
+          <td class="header">Giới tính</td>
+          <td class="header">Điểm</td>
+          <td class="header">Xếp loại</td>
+        </tr>
+        <tr>
+          <td class="left">Kim Tiêu Phương</td>
+          <td class="center">1988</td>
+          <td class="center">Nữ</td>
+          <td class="center">8.2</td>
+          <td class="center">Giỏi</td>
+        </tr>
+        <tr>
+          <td class="left">Ưng hoàng phúc</td>
+          <td class="center">1981</td>
+          <td class="center">Nam</td>
+          <td class="center">7.5</td>
+          <td class="center">Khá</td>
+        </tr>
+        <tr>
+          <td class="left">Đàm Vĩnh Hưng</td>
+          <td class="center">1979</td>
+          <td class="center">Nam</td>
+          <td class="center">5.6</td>
+          <td class="center">T.Bình</td>
+        </tr>
+        <tr>
+          <td class="left">Trần Thu Hà</td>
+          <td class="center">1981</td>
+          <td class="center">Nữ</td>
+          <td class="center">6.7</td>
+          <td class="center">Khá</td>
+        </tr>
+        <tr>
+          <td class="left">Lương Bằng Quang</td>
+          <td class="center">1980</td>
+          <td class="center">Nam</td>
+          <td class="center">4.1</td>
+          <td class="center">Kém</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="right footer">Tổng số học sinh đạt:</td>
+          <td class="center footer">04</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

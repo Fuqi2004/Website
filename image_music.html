@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image and Music Page</title>
+    <style>
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      .image-container {
+        margin-bottom: 20px;
+      }
+      .sample-image {
+        width: 350px;
+        height: 400px;
+        object-fit: contain;
+      }
+      .audio-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Chèn Nhúng Ảnh Và Âm Thanh</h1>
+      <div class="image-container">
+        <img
+          src="./Images/doremon_phim.png"
+          alt="Sample Image"
+          class="sample-image"
+        />
+      </div>
+      <div class="audio-container">
+        <audio controls loop>
+          <source src="./music/YumeWoKanaeteDoraemon-MAO-3117896.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
