@@ -5,29 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image and Music Page</title>
     <style>
+      body {
+        background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
       .container {
         width: 100%;
         max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
+        margin: 20px;
+        padding: 30px;
         text-align: center;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       }
+
+      h1 {
+        color: #2c3e50;
+        font-size: 2.2em;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
       .image-container {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       }
+
       .sample-image {
         width: 350px;
         height: 400px;
         object-fit: contain;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
+
+      .sample-image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
       .audio-container {
-        margin-top: 20px;
+        margin-top: 30px;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      audio {
+        width: 100%;
+        max-width: 400px;
+        height: 40px;
+        border-radius: 30px;
+        background: #f8f9fa;
+      }
+
+      audio::-webkit-media-controls-panel {
+        background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      }
+
+      audio::-webkit-media-controls-play-button {
+        background-color: #3498db;
+        border-radius: 50%;
+      }
+
+      audio::-webkit-media-controls-play-button:hover {
+        background-color: #2980b9;
       }
     </style>
   </head>
   <body>
     <div class="container">
-        <h1>Chèn Nhúng Ảnh Và Âm Thanh</h1>
+      <h1>Chèn Nhúng Ảnh Và Âm Thanh</h1>
       <div class="image-container">
         <img
           src="./Images/doremon_phim.png"
@@ -37,7 +96,10 @@
       </div>
       <div class="audio-container">
         <audio controls loop>
-          <source src="./music/YumeWoKanaeteDoraemon-MAO-3117896.mp3" type="audio/mpeg" />
+          <source
+            src="./music/YumeWoKanaeteDoraemon-MAO-3117896.mp3"
+            type="audio/mpeg"
+          />
           Your browser does not support the audio element.
         </audio>
       </div>
